@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Recommendation System</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+  </head>
+  <header>
+  <nav>
+    <div class="logo">
+      <a href="/">MovieMania</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <body>
+  <div class="form-container">
+  <div class="form-card">
+    <h2>Movie Recommendation System</h2>
+    <form action="/recommendation" method="POST">
+     <label for="genre1">Enter your favorite genre:</label>
+    <input type="text" id="genre1" name="genre1" required>
+    <label for="genre2">Enter your friend's favorite genre:</label>
+    <input type="text" id="genre2" name="genre2" required>
+    <input type="submit" value="Get Recommendations">
+    </form>
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2023 Movie Recommendation System</p>
+     <p> Made by Arjan Singh Johar || Sumit Mante || Abhishek Ingle</p>
+    </footer>
+  </body>
+</html>

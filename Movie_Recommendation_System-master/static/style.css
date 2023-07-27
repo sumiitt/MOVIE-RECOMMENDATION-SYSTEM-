@@ -1,0 +1,214 @@
+/* Body styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+/* Form container styles */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#010A10
+}
+
+/* Form card styles */
+.form-card {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* added border-radius */
+}
+
+/* Form heading styles */
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+}
+
+/* Form input styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #dc143c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+a{
+text-decoration:none;
+color: #fff;
+display: inline-block;
+text-align: center;
+}
+.button-container {
+  text-align: center;
+}
+button{
+ background-color: #dc143c;;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color:#010A10;
+;
+}
+/* Body styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+font-family: Poppins, sans-serif;
+background-color:#010A10;
+}
+
+h1 {
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: 1.5rem;
+color:white
+}
+
+p {
+font-size: 1.25rem;
+text-align: center;
+margin-bottom: 2rem;
+color:white;
+}
+
+.result-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+margin: 0 auto;
+max-width: 800px;
+
+}
+.recommend-p
+{
+color:black
+}
+
+.result-card {
+width: 300px;
+background-color: #f7f7f7;
+border-radius: 10px; /* added border-radius */
+padding: 1rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+.result-container {
+  margin-bottom: 50px; /* Add margin to the bottom */
+}
+
+.result-card h3 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.result-card p {
+font-size: 1.25rem;
+margin-bottom: 0.5rem;
+}
+
+/* Header styles */
+header {
+  background-color: #dc143c;
+  color: #fff;
+  padding: 1rem;
+  margin-top:0;
+}
+
+.logo {
+  float: left;
+}
+
+.nav-links {
+  float: right;
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* Add this to move the links to the right */
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #dc143c ;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin:bottom:0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+      <style>
+     .button-container {
+    /* existing styles */
+   margin-bottom: 50px;
+     }
+
+      </style>
+  </head>
+  <header>
+		<nav>
+			<div class="logo">
+				<a href="/">MovieMania</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+  <body>
+    <h1>Welcome to our Movie Recommendation System!</h1>
+    <p>Whom are you watching the movie with?</p>
+    <p>Please select an option:</p>
+    <div class="button-container">
+      <button type="submit"><a href="alone" >I am watching Alone</a></button>
+      <button type="submit"><a href="friends">I am watching with friends</a></button>
+    </div>
+
+  <footer>
+    <p>&copy; 2023 Movie Recommendation System</p>
+     <p> Made by Arjan Singh Johar || Sumit Mante || Abhishek Ingle</p>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <header>
+  <nav>
+    <div class="logo">
+      <a href="/">MovieMania</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <body>
+    <h1>Movie Recommendations</h1>
+    <p>Based on your preferred genres "{{ genre1 }}" and "{{ genre2 }}", here are our top recommendations:</p>
+    <div class="result-container">
+      {% for movie, rating in recommendations %}
+        <div class="result-card">
+          <h3>{{ movie }}</h3>
+          <p class="recommend-p">Similarity score: {{ loop.index }}</p>
+          <p class="recommend-p">Rating: {{ rating }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <footer>
+      <p>&copy; 2023 Movie Recommendation System</p>
+      <p>Made by Arjan Singh Johar || Sumit Mante || Abhishek Ingle</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendation System - Alone</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+      <style>
+         h2, h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+color:white
+
+}
+        .form-card{
+        width:100vh;
+        height:30vh;
+        }
+      </style>
+  </head>
+  <header>
+		<nav>
+			<div class="logo">
+				<a href="/">MovieMania</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+  <body>
+    <h1>Movie Recommendation System - Alone</h1>
+    <p>Please enter the name of the movie you want to watch similar movies to:</p>
+    <div class="form-container">
+        <div class="form-card">
+    <form action="/recommendations" method="post">
+      <label for="movie_name">Movie Name:</label>
+      <input type="text" id="movie_names" name="movie_names" required>
+      <br>
+      <input type="submit" value="Get Recommendations">
+    </form>
+        </div>
+        </div>
+    <h2>Why watch movies alone?</h2>
+  <p>Have you ever tried watching a movie with someone who constantly talks or asks questions during the film? It can be incredibly frustrating and distracting from the story. That's why watching a movie alone can be a great experience. You can fully immerse yourself in the film and enjoy it without any interruptions. Plus, you can eat all the popcorn and candy you want without sharing!</p>
+
+  <h2>How our movie recommendation system works</h2>
+  <p>Our movie recommendation system uses advanced algorithms to suggest movies that are similar to the one you entered. We take into account factors such as genre, director, actors, and more to provide you with the best recommendations possible. So, whether you're in the mood for an action-packed thriller or a heartwarming romance, we've got you covered.</p>
+
+
+  <footer>
+    <p>&copy; 2023 Movie Recommendation System</p>
+     <p> Made by Arjan Singh Johar || Sumit Mante || Abhishek Ingle</p>
+    </footer>
+  </body>
+</html>
